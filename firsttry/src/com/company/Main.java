@@ -10,8 +10,8 @@ import java.net.*;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-
+	
+	
             Socket clientSocket;
             BufferedReader in;
             try {
@@ -25,17 +25,16 @@ public class Main {
                         new BufferedReader(
                                 new InputStreamReader(System.in)
                         );
-                String userInput;
-
-                for (Integer i = 0; i < 1001; i++)
-                {
-                    System.out.println(in.readLine());
-                }
+	            
+	            while(true){
+		            System.out.println(in.readLine());
+	            }
+	
+	            
             }catch (IOException e){
-                System.out.println("Shit be broke");
+                System.out.println("broke");
             }
-
-
+	   
     }
 
 
